@@ -8,7 +8,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    666 | Keaideo
+    Hexo博客搭建教程 | Keaideo
   </title>
   <meta name="description" content="">
   
@@ -90,7 +90,7 @@
         <a href="/" class="header-toolbar-left"><i
                   class="fa fa-file-text"></i> Posts </a>
         <a href="/"
-           class="header-toolbar-right"> 2 </a>
+           class="header-toolbar-right"> 1 </a>
       </li>
       <li>
         <a href="/" class="header-toolbar-left"><i
@@ -130,16 +130,16 @@
     <i class="fa fa-user-o"></i>
     John Doe
 
-    <span class="post-date float-right" title="{{moment(1599814911000).format('MMM DD, YYYY, h:mm:ss A')}}">
+    <span class="post-date float-right" title="{{moment(1599816500000).format('MMM DD, YYYY, h:mm:ss A')}}">
       
           <i class="fa fa-pencil-square-o"></i>
       
-      {{moment(1599814911000).fromNow()}}
+      {{moment(1599816500000).fromNow()}}
     </span>
   </h3>
 
   <article class="post-content">
-    <h1>666</h1>
+    <h1>Hexo博客搭建教程</h1>
     <h1 id="1-新建仓库"><a href="#1-新建仓库" class="headerlink" title="1.新建仓库"></a>1.新建仓库</h1><p>都说了要给他人访问，如果你连个仓库都没有，是不是说不过去？出门右转上 <code>github</code> 新建一个仓库，仓库名必须为 <code>&lt;user-name&gt;.github.io</code> 格式，其中 <code>&lt;user-name&gt;</code> 是你 <code>github</code> 的昵称。不要问我为什么，问我我也不想回答你。</p>
 <h1 id="2-全局安装hexo"><a href="#2-全局安装hexo" class="headerlink" title="2.全局安装hexo"></a>2.全局安装hexo</h1><p>如果你连 <code>npm</code> 是啥都不知道，对不起，我们的缘分尽了，你走吧。…别，别，别，开个玩笑，有啥问题可以留言。打开命令行，输入下面的命令，全局安装 <code>hexo</code>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
@@ -156,6 +156,24 @@
 <p>万事俱备，只欠东南风！执行下面两个命令，就可以把项目自动部署到 <code>github</code> 上啦啦啦啦啦。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
+<h1 id="5-查看效果"><a href="#5-查看效果" class="headerlink" title="5. 查看效果"></a>5. 查看效果</h1><p>凡是连环杀手都喜欢在杀人后留在现场，因为他喜欢欣赏自己的杰作！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">浏览器访问：https:&#x2F;&#x2F;&lt;user-name&gt;.github.io&#x2F; 即可看到效果。</span><br></pre></td></tr></table></figure>
+
+<p>至此，已经完成了个人博客的搭建，也可以在浏览器中访问，下面将介绍一些常用的野外生存技能。</p>
+<h1 id="6-如何创建新文章"><a href="#6-如何创建新文章" class="headerlink" title="6.如何创建新文章"></a>6.如何创建新文章</h1><p>阳光明媚，一杯温暖的咖啡，一束倾斜的阳光，惬意地抿一口咖啡，我要开始写博客了！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; [layout] 为布局，可选项为 &#96;post&#96;、&#96;page&#96;、&#96;draft&#96;，这将决定文章所在文件路径。</span><br><span class="line">&#x2F;&#x2F; &lt;title&gt; 为文章标题</span><br><span class="line">&#x2F;&#x2F; 如 hexo new post 除了帅气，我还有啥！</span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="7-更换主题皮肤"><a href="#7-更换主题皮肤" class="headerlink" title="7.更换主题皮肤"></a>7.更换主题皮肤</h1><p>风格不喜欢？换之。</p>
+<p>更换主题流程：下载主题 -&gt; 配置主题，以 <code>xoxo</code> 为例（不要想歪了！）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 下载到themes文件夹下</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;KevinOfNeu&#x2F;hexo-theme-xoxo xoxo</span><br><span class="line"></span><br><span class="line"># 修改 _config.yml 配置</span><br><span class="line">theme: xoxo</span><br></pre></td></tr></table></figure>
+
+<h1 id="8-部署优化"><a href="#8-部署优化" class="headerlink" title="8.部署优化"></a>8.部署优化</h1><p>每次都要执行 <code>hexo clean</code> 和 <code>hexo deploy</code>，不如写个新的脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; package.json</span><br><span class="line">&quot;dev&quot;: &quot;hexo s&quot;,</span><br><span class="line">&quot;build&quot;: &quot;hexo clean &amp; hexo deploy&quot;</span><br></pre></td></tr></table></figure>
+
+<p>部署命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<h1 id="9-接入评论系统-valine"><a href="#9-接入评论系统-valine" class="headerlink" title="9.接入评论系统 - valine"></a>9.接入评论系统 - valine</h1><p><a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">https://valine.js.org/quickstart.html</a></p>
 
   </article>
 </div>
